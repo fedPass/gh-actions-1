@@ -1,5 +1,8 @@
 name: Show issue details
-on: issues
+# on: issues
+on:
+  issues:
+    types: opened
 jobs:
   get_issue_detail:
     runs-on: ubuntu-latest
