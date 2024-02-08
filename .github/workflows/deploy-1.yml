@@ -59,7 +59,8 @@ jobs:
       # job artifact download
       - name: Get build artifacts
         uses: actions/download-artifact@v4
-        with: build-artifact
+        with: 
+          name: build-artifact
       - name: Print files name
         run: ls
       - name: Make deploy
