@@ -1,5 +1,9 @@
 name: Deploy-1
-on: push
+# on: push
+on: 
+  push:
+    branches:
+      - main
 jobs:
   lint:
     runs-on: ubuntu-latest
